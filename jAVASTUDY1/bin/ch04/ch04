@@ -6,3 +6,12 @@
 			  하위 클래스에서 동일한 이름의 메소드를 재정의 할 수 있음
 			  
 			  
+@overriding 어노테이션(annotation)
+	주석이라는 의미
+	컴파일러에게 특별한 정보를 제공해주는 역활
+	
+	@override 				: 재정의된 매소드라는 정보 제공
+	@functionallnterface 	: 함수형 인터페이스라는 정보 제공
+	@Deprecated 			: 이후 버전에서 사용되지 않을 수 있는 변수, 메소드에 사용됨
+	@SuppressWarnings 		: 툭정 경고가 나타나지 않도록 함			  
+			  

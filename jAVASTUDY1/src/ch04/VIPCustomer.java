@@ -18,6 +18,13 @@ public class VIPCustomer extends Customer {
 		salesRatio = 0.1;
 	}
 	
+	@Override						/* 상위클래스의 메소드를 하위클래스 전용으로 사용하기 위해 재정의 */
+	public int calcPrice(int price) {
+		bonusPoint += price * bonusRatio;
+		price -= (int)(price * salesRatio);
+		return price;
+	}
+	
 	public int getAgentId() {		/*agentId private 접근제어자를 지정 외부 접근 불가. getter, setter를 통해서만 접근 가능 */
 		return agentId;
 	}

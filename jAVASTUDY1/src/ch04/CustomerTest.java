@@ -5,16 +5,14 @@ public class CustomerTest {
 	public static void main(String[] args) {
 		
 		 Customer customerLee = new Customer();
-		 customerLee.setCustomerName("이순신");
-		 customerLee.setCustomerId(10010);
 		 customerLee.bonusPoint = 1000;
-		 System.out.println(customerLee.showCustomerInfo());
+		 int price = customerLee.calcPrice(1000);
+		 System.out.println(customerLee.showCustomerInfo() + "가격은" + price );
 		 
 		 VIPCustomer customerKim = new VIPCustomer();
-		 customerKim.setCustomerName("김순신");
-		 customerKim.setCustomerId(10020);
 		 customerKim.bonusPoint = 10000;
-		 System.out.println(customerKim.showCustomerInfo());
+		 price = customerKim.calcPrice(1000);
+		 System.out.println(customerKim.showCustomerInfo() + "가격은" + price);
 		 
 	}
 }
